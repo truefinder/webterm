@@ -1,0 +1,70 @@
+
+ DESCRIPTION
+ ==========================================================================
+
+ Wterm 은 HTTP를 이용해서 사용할수 있는 유닉스 껍데기 터미널입니다.
+ 이것은 80번 포트만을 허용하는 방화벽시스템을 우회하여 사용할수가 있죠.
+ 이를 사용하기 위해서는 3개의 모듈을 사용해야 합니다.
+ wtcgi.cgi , wterm, server 입니다. wterm은 사용자의 터미널 인터페이스고요.
+ wtcgi.cgi는 전통적인 cgi입니다. (도메인 소켓을 사용해서 wtserver와 통신합니다)
+ server는 wtcgi.cgi는 별도로 떠있는 데몬 프로세스입니다. 자식으로 sh을 띄워놓고
+ 의사터미널을 사용하여 입력과 출력을 담당하게 됩니다.
+
+ 이에 관한 최신 정보는 아래에서 찾아보실수 있습니다.
+ http://underground.or.kr/project/webterm/
+
+
+ INSTALL & USAGE 
+ ==========================================================================
+
+ 먼저 서버쪽에 wtcgi.cgi를 설치해야 합니다. 그러기 위해서 여러분이 가지고 있는
+ wterm-X.X.X.tar.gz를 읽기,쓰기,실행가능한 cgi-bin 디렉토리같은 곳에 풀어서
+ make를 실행하세요. 그럼 wtserver, wterm, wtcgi.cgi가 생성됩니다.
+ 에러가 나거나 , 위 세 화일이 만들어지지 않았다면, 제게 메일을 보내주세요.
+ 거기서 nobody 혹은 apache - 웹서버가 cgi를 실행시키는 권한으로 ./wtserver &를 
+ 실행하세요. 그 후에 wtcgi.cgi를 자신의 리눅스 클라이언트 쪽으로 옮겨서
+ 적당히 다음과 같이 실행하시면 됩니다.
+
+ ex)
+	./wterm -h 192.168.1.200 -p 80 -l /cgi-bin/wtcgi.cgi
+
+ 그러면 터미널이 시작되고, 첫글자를 누루면 실행결과가 보일것입니다.
+ 각 key 대기시간을 염두해서 사용하세요. ;]
+
+ 
+ CHANGES
+ ======================================================================
+ ChangeLog를 참조하세요.
+
+
+ COPYING
+ ======================================================================
+
+ 이 프로그램은 free 소프트웨어입니다 ; 당신은 이것을 자유 소프트재단에서 
+ 발표한 버젼 2혹은 그 이후의  GNU General Public License 하에서  수정해서 
+ 재배포할 수 있습니다. 
+
+ 사용하는데 있어 어떠한 보장도 하지 않습니다.
+ 수행중의 피해는 제작자의 책임이 아닙니다. GNU Geneal Public License를 한번 
+ 참고하세요.
+
+ 당신은 이 프로그램에 따라서 GNU General Public License를 한장 받아야 합니다.
+ 그렇지 않으면, 자유 소프트웨어 재단에 메일을 쓰세요.
+ the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA
+
+ WTERM - Web Terminal
+ (C) COPYRIGHT Seunghyun Seo
+ All right reserverd ( Aug 27, 2002 )
+
+
+ CONTACT
+ ======================================================================
+
+ 버그나 질문, 개발관련 사항은 아래 이메일로 보내주세요.
+
+ Seunghyun Seo, seo@igrus.inha.ac.kr or frog@hackerslab.com
+ http://igrus.inha.ac.kr/~seo/
+
+
+
+

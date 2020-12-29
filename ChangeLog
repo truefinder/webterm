@@ -1,0 +1,8 @@
+
+ver 0.0.2:
+	expanded buf size 1024 to 8192
+	added setitimer to set timer , it replaces original alram call.
+
+
+ver 0.0.1:
+	first released, only works on linux
