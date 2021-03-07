@@ -19,7 +19,7 @@
  * "wtserver" is a domain socket server which manages pseudo terminal of sub shell process "/bin/sh"
 
  Package firstly released at http://underground.or.kr/project/webterm/ , 2002
- no more maintenanced, only for academic purpose ... 
+ Now no more maintenanced, only for academic purpose ... 
 
 
  Install 
@@ -31,13 +31,14 @@
  $ make 
  ```
  
- Please make sure your pwned cgi-bin directory which is excutable 
+ Please make sure your pwned cgi-bin directory which is excutable, 
  because wtserver creates unix domain socket for comunication to wtcgi.cgi
+ 
  
  Usage 
  ==========================================================================
  
- Unpack all pacakge in cgi forlder on your target server after pwned
+ Install pacakge in cgi forlder on your target server after pwned
  Run wtserver with privilege  equal with target web server 
  
  ```
