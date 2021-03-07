@@ -25,14 +25,14 @@
  Install 
  ==========================================================================
 
- First, you should move your tarball to cgi-bin directory could be excutable 
- and read-writable by web user in your web server. 
- ( bcoz, server creates unix domain socket for comunication with wtcgi.cgi ) 
+ ```
+ $ git clone git@github.com:truefinder/webterm.git
+ $ cd webterm 
+ $ make 
+ ```
  
- And next, extract tar file  and type 'make'
- if there were no bugs in procedure and three modules which refered above 
- created, then server installation completly done.  
- if not, plz config your detail set in each source file or send email to me.
+ Please make sure your pwned cgi-bin directory which is excutable 
+ because wtserver creates unix domain socket for comunication to wtcgi.cgi
  
  Usage 
  ==========================================================================
@@ -41,13 +41,13 @@
  Run wtserver with privilege  equal with target web server 
  
  ```
- $ wtserver &
+ (pwned server)$ wtserver &
  ```
  
  And, please connect to your server thru the wterm
  
  ```
- $ wterm -h <target_ip> -p 80 -l /cgi-bin/wtcgi.cgi
+ (your linux)$ wterm -h <target_ip> -p 80 -l /cgi-bin/wtcgi.cgi
  ```
 
  Changes
