@@ -2,22 +2,23 @@
 
  WebTerm  
  =========================================================================
- connection orientied cgi web terminal, worte for pentester 
+ Connection orientied cgi web ppty terminal, worte for security researchre and pentester 
+ You may even use vim thru webterm cgi 
 
 
 
  DESCRIPTION
  ==========================================================================
 
-  Wterm is terminal which make be able to communicate with unix shell via 
- HTTP. it could be used over firewall that allow only HTTP (port 80).
- there are three modules in this package. wtcgi.cgi, wterm, wtserver.
- "wterm" is a client interface like CRT. "wtcgi.cgi" is traditional 
- cgi program comunicates server with unix domain socket. and "wtserver" 
- is a domain socket server which manages pseudo terminal of sub process 
- "/bin/sh"
+ Webterm is a terminal which makes to be able to communicate with unix shell via 
+ HTTP. it could be used over firewall that only allows HTTP (port 80).
+ package consists with there modules. wtcgi.cgi, wterm, wtserver.
+ 
+ * "wterm" is a client interface like CRT. 
+ * "wtcgi.cgi" is traditional cgi program comunicates with a server using unix domain socket. 
+ * "wtserver" is a domain socket server which manages pseudo terminal of sub shell process "/bin/sh"
 
- web term released first at http://underground.or.kr/project/webterm/ , 2002
+ Package firstly released at http://underground.or.kr/project/webterm/ , 2002
 
 
  INSTALL 
