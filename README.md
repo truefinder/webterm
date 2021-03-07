@@ -1,6 +1,8 @@
 
 
-		 WebTerm  - Web Terminal 
+ WebTerm  
+ =========================================================================
+ connection orientied cgi web terminal, worte for pentester 
 
 
 
