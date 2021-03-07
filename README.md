@@ -83,14 +83,10 @@
  All right reserverd ( Aug 27, 2002 )
 
 
- CONTACT
+ Contact
  ======================================================================
 
- Send bug (error) reports, questions and comments to below email
-
- Seunghyun Seo, seo@igrus.inha.ac.kr or frog@hackerslab.com
- http://igrus.inha.ac.kr/~seo/
-
+ Seunghyun Seo
 
 
 
