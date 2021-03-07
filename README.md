@@ -21,7 +21,7 @@
  http://underground.or.kr/project/webterm/
 
 
- INSTALL & USAGE 
+ INSTALL 
  ==========================================================================
 
  First, you should move your tarball to cgi-bin directory could be excutable 
@@ -33,16 +33,20 @@
  created, then server installation completly done.  
  if not, plz config your detail set in each source file or send email to me.
  
- Next, run server with privilege  equal to 
- web server
- ex)
+ USAGE 
+ ==========================================================================
+ 
+ Run server with privilege  equal to target web server
+ 
+ ```
 	./wtserver &
-
+ ```
  and move wterm into your linux box which use as terminal client 
  Now, you can connect your server with your wterm
- ex)
-	./wterm -h 192.168.1.200 -p 80 -l /cgi-bin/wtcgi.cgi
-
+ 
+ ```
+	./wterm -h <target_ip> -p 80 -l /cgi-bin/wtcgi.cgi
+ ```
 
  CHANGES
  ==========================================================================
