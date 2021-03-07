@@ -36,16 +36,17 @@
  USAGE 
  ==========================================================================
  
- Run server with privilege  equal to target web server
+ Unpack all pacakge in cgi forlder on your target server after pwned
+ Run wtserver with privilege  equal with target web server 
  
  ```
-	./wtserver &
+ $ wtserver &
  ```
- and move wterm into your linux box which use as terminal client 
- Now, you can connect your server with your wterm
+ 
+ And, please connect to your server thru the wterm
  
  ```
-	./wterm -h <target_ip> -p 80 -l /cgi-bin/wtcgi.cgi
+ $ wterm -h <target_ip> -p 80 -l /cgi-bin/wtcgi.cgi
  ```
 
  CHANGES
