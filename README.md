@@ -17,8 +17,7 @@
  is a domain socket server which manages pseudo terminal of sub process 
  "/bin/sh"
 
- The latest information about Wterm can be found at :
- http://underground.or.kr/project/webterm/
+ web term released first at http://underground.or.kr/project/webterm/ , 2002
 
 
  INSTALL 
