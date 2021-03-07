@@ -7,7 +7,7 @@
 
 
 
- DESCRIPTION
+ Description
  ==========================================================================
 
  Webterm is a terminal which makes to be able to communicate with unix shell via 
@@ -19,9 +19,10 @@
  * "wtserver" is a domain socket server which manages pseudo terminal of sub shell process "/bin/sh"
 
  Package firstly released at http://underground.or.kr/project/webterm/ , 2002
+ no more maintenanced, only for academic purpose ... 
 
 
- INSTALL 
+ Install 
  ==========================================================================
 
  First, you should move your tarball to cgi-bin directory could be excutable 
@@ -33,7 +34,7 @@
  created, then server installation completly done.  
  if not, plz config your detail set in each source file or send email to me.
  
- USAGE 
+ Usage 
  ==========================================================================
  
  Unpack all pacakge in cgi forlder on your target server after pwned
@@ -49,13 +50,13 @@
  $ wterm -h <target_ip> -p 80 -l /cgi-bin/wtcgi.cgi
  ```
 
- CHANGES
+ Changes
  ==========================================================================
 
  Confer 'ChangeLog' in this package
 
 
- COPYING
+ Copying
  ==========================================================================
 
  This program is free software; you can  redistribute it and/or modify
